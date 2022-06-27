@@ -17,7 +17,7 @@ export default ({ children }) => {
   const addCart = (product) => {
     dispatch({ type: ADD_TO_CART, payload: product });
   };
-  const delCart = (product) => {
+  const delCart = (id, i) => {
     dispatch({ type: DELETE_FROM_CART, payload: { id, i } });
   };
 
