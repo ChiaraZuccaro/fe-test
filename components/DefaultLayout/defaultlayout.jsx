@@ -1,9 +1,10 @@
+import { Navbar } from "../Navbar/navbar";
 import styles from "./styles.module.scss";
 
 export const DefaultLayout = ({ children }) => {
   return (
     <div className={styles.Allwrapper}>
-      <header>ciao</header>
+      <Navbar />
 
       {children}
 

@@ -1,0 +1,28 @@
+.navbar {
+  padding: 0 15px;
+  .navWrap {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    .logo {
+      width: 60px;
+      height: auto;
+    }
+
+    .hamburger {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+
+      svg {
+        width: 22px;
+        cursor: pointer;
+        height: auto;
+      }
+    }
+  }
+}
