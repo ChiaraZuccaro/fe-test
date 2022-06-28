@@ -24,12 +24,14 @@
     button {
       border: none;
       background-color: transparent;
-    }
-    svg {
-      width: 25px;
-      height: auto;
-      background-color: white;
-      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      svg {
+        width: 25px;
+        height: auto;
+        background-color: white;
+        border-radius: 50px;
+      }
     }
   }
 }
