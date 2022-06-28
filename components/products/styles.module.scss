@@ -18,6 +18,14 @@
     padding: 0 15px;
   }
 
+  .buttonWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+  }
+
   .details {
     display: flex;
     flex-direction: column;

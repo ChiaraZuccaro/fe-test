@@ -1,0 +1,39 @@
+.button {
+  width: 70%;
+  background-color: rgb(63, 57, 57);
+  text-align: center;
+  border: 1px rgb(63, 57, 57) solid;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
+  &.wish {
+    border: 1px solid rgb(63, 57, 57);
+    background-color: white;
+    color: rgb(63, 57, 57);
+  }
+}
+.button:hover {
+  background-color: white;
+  color: rgb(63, 57, 57);
+  transition: all 0.3s ease-in-out;
+  &.wish {
+    background-color: rgb(63, 57, 57);
+    color: white;
+  }
+}
+
+.button:active {
+  background-color: white;
+  color: rgb(63, 57, 57);
+  transition: all 0.3s ease-in-out;
+  &.wish {
+    background-color: rgb(63, 57, 57);
+    color: white;
+  }
+}

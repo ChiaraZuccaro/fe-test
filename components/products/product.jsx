@@ -3,6 +3,7 @@ import styles from "./styles.module.scss";
 import { IoMdArrowDropup, IoMdArrowDropdown } from "react-icons/io";
 import { ProdImg } from "../ProdImg/prodimg";
 import { UserChoice } from "../UserChoice/userChoice";
+import { Button } from "./button/button";
 
 export const Product = ({ prod }) => {
   const [clickShip, setClickship] = useState(false);
@@ -18,6 +19,10 @@ export const Product = ({ prod }) => {
       <ProdImg arrayImgs={prod.imgs} />
 
       <UserChoice option={prod.option} />
+      <div className={styles.buttonWrap}>
+        <Button text={"Aggiungi al carrello"} />
+        <Button text={"Metti nei preferiti"} />
+      </div>
 
       <div className={styles.details}>
         <div className={styles.description}>
