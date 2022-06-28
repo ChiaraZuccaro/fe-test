@@ -13,8 +13,7 @@ import id211 from "./productImg/11.jpg";
 const commerce = [
   {
     id: 0,
-    title:
-      'HP 255 G8 Computer portatile 39,6 cm (15.6") 1366 x 768 Pixel AMD 3000 8 GB DDR4-SDRAM 256 GB SSD Wi-Fi 6 (802.11ax) Windows 10 Home Nero co 2W1D7EA',
+    title: "HP 255 G8 Computer portatile",
     price: 274.8,
     rating: {
       rate: 4.5,
