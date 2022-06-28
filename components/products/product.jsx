@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styles from "./styles.module.scss";
 import { IoMdArrowDropup, IoMdArrowDropdown } from "react-icons/io";
+import { ProdImg } from "../ProdImg/prodimg";
 
 export const Product = ({ prod }) => {
   const [clickShip, setClickship] = useState(false);
@@ -12,6 +13,8 @@ export const Product = ({ prod }) => {
         <h2>{prod.title}</h2>
         <p>{prod.price} €</p>
       </div>
+
+      <ProdImg arrayImgs={prod.imgs} />
 
       <div className={styles.details}>
         <div className={styles.description}>

@@ -48,12 +48,8 @@ const commerce = [
     },
     imgs: [id208, id209, id210, id211],
     option: ["blue", "red", "purple", "grey"],
-    description: `
-    Sistema operativo: Windows 11 Home
-    Processore: Intel Core i7-11390H
-    Memoria: RAM 16 GB - SSD 1 TB
-    Display: Diagonale da 40,6 cm (16"), 3K+ (3072 x 1920), predisposizione per multitouch, IPS, micro-edge, vetro Corning Gorilla NBT antiriflesso, riduzione della luce blu, 400 nit, 100% sRGB
-    Tastiera: Tastiera Nightfall Black di dimensioni standard, con retroilluminazione e supporto gesti multi-touch`,
+    description:
+      'Sistema operativo: Windows 11 Home, Processore: Intel Core i7-11390H, Memoria: RAM 16 GB - SSD 1 TB, Display: Diagonale da 40,6 cm (16"), 3K+ (3072 x 1920), predisposizione per multitouch, IPS, micro-edge, vetro Corning Gorilla NBT antiriflesso, riduzione della luce blu, 400 nit, 100% sRGB, Tastiera: Tastiera Nightfall Black di dimensioni standard, con retroilluminazione e supporto gesti multi-touch',
   },
 ];
 

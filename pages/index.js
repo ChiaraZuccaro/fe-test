@@ -6,7 +6,6 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
   const randomProd = commerce[Math.floor(Math.random() * commerce.length)];
-  console.log(randomProd);
   return (
     <div className={styles.container}>
       <Head>
