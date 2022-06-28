@@ -27,8 +27,7 @@ const commerce = [
   },
   {
     id: 1,
-    title:
-      "Acer Notebook pc portatile Display da 15.6” N4020 Fino A 2.80GHz,Ram 8Gb Ddr4 SSd NVMe 256 Gb,Pc portatile,Hdmi,Wi fi,Bluetooth,Windows 11 professional",
+    title: "Acer Notebook pc portatile",
     price: 319.99,
     rating: {
       rate: 3.5,
@@ -37,12 +36,12 @@ const commerce = [
     option: ["blue", "red", "green", "grey"],
     imgs: [id105, id106, id107],
     description: `
-      Le componenti utilizzate nei nostri portatili sono distribuite dai migliori brand in circolazione, ai portatili vengono aggiunte delle migliorie uniche in grado di migliorarne la stabilità della macchina stessa, aggiungendo valore vitale e prestazionale alla macchina`,
+    Display da 15.6” N4020 Fino A 2.80GHz,Ram 8Gb Ddr4 SSd NVMe 256 Gb,Pc portatile,Hdmi,Wi fi,Bluetooth,Windows 11 professional`,
   },
   {
     id: 2,
     title:
-      'HP - PC Spectre x360 16-f0000sl Notebook Convertibile, Intel Core i7-11390H, RAM 16 GB, SSD 1 TB, Grafica Intel Iris Xe, Windows 11 Home, Display 16" 3K+, Lettore Impronte digitali, Pen Inclusa, Nero',
+      "HP - PC Spectre x360 16-f0000sl Notebook Convertibile,Lettore Impronte digitali, Pen Inclusa",
     price: 1699.99,
     rating: {
       rate: 4,

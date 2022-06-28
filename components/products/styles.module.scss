@@ -1,0 +1,58 @@
+.Prod {
+  h2 {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  h3 {
+    font-size: 15px;
+    margin: 5px 0;
+  }
+  p {
+    font-size: 14px;
+  }
+
+  .TopProd {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 15px;
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+
+    .expandWrap {
+      position: relative;
+      width: 100%;
+      .expand {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+      }
+
+      .expandInfo {
+        overflow: hidden;
+        height: 0;
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        transition: height 0.3s ease-in-out;
+        &.on {
+          height: 80px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 0 10px;
+          transition: height 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.sliderCard {
+  border: 1px red solid;
+  height: 150px;
+  .image {
+    width: 148px;
+    span {
+      display: block;
+      margin: auto 0;
+    }
+  }
+}
