@@ -2,6 +2,7 @@ import { useState } from "react";
 import styles from "./styles.module.scss";
 import { IoMdArrowDropup, IoMdArrowDropdown } from "react-icons/io";
 import { ProdImg } from "../ProdImg/prodimg";
+import { UserChoice } from "../UserChoice/userChoice";
 
 export const Product = ({ prod }) => {
   const [clickShip, setClickship] = useState(false);
@@ -15,6 +16,8 @@ export const Product = ({ prod }) => {
       </div>
 
       <ProdImg arrayImgs={prod.imgs} />
+
+      <UserChoice option={prod.option} />
 
       <div className={styles.details}>
         <div className={styles.description}>
