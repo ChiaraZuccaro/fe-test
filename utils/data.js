@@ -33,22 +33,22 @@ const commerce = [
       rate: 3.5,
       count: 15,
     },
-    option: ["blue", "red", "green", "grey"],
+    option: ["blue", "pink", "green", "grey"],
     imgs: [id105, id106, id107],
     description: `
-    Display da 15.6” N4020 Fino A 2.80GHz,Ram 8Gb Ddr4 SSd NVMe 256 Gb,Pc portatile,Hdmi,Wi fi,Bluetooth,Windows 11 professional`,
+      Display da 15.6” N4020 Fino A 2.80GHz,Ram 8Gb Ddr4 SSd NVMe 256 Gb,Pc portatile,Hdmi,Wi fi,Bluetooth,Windows 11 professional`,
   },
   {
     id: 2,
     title:
-      "HP - PC Spectre x360 16-f0000sl Notebook Convertibile,Lettore Impronte digitali, Pen Inclusa",
+      "HP - PC Spectre x360 16 Notebook Convertibile,Lettore Impronte digitali, Pen Inclusa",
     price: 1699.99,
     rating: {
       rate: 4,
       count: 10,
     },
     imgs: [id208, id209, id210, id211],
-    option: ["blue", "red", "green", "grey"],
+    option: ["blue", "red", "purple", "grey"],
     description: `
     Sistema operativo: Windows 11 Home
     Processore: Intel Core i7-11390H

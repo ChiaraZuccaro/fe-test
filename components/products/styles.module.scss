@@ -27,6 +27,7 @@
 
     .expandWrap {
       position: relative;
+      font-size: 14px;
       width: 100%;
       .expand {
         display: flex;
@@ -43,14 +44,23 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        justify-content: center;
         transition: height 0.3s ease-in-out;
+        ul {
+          margin: 10px 0;
+        }
         &.on {
           height: 80px;
           display: flex;
           flex-direction: column;
           align-items: flex-start;
+          justify-content: center;
           padding: 0 10px;
+          margin: auto 0;
           transition: height 0.3s ease-in-out;
+          ul {
+            margin: 10px 0;
+          }
         }
       }
     }
