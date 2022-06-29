@@ -10,8 +10,6 @@ export const ProdImg = ({ arrayImgs }) => {
     return next;
   };
 
-  console.log(next);
-
   return (
     <div className={styles.prods}>
       <div className={styles.prodEvidence}>

@@ -44,8 +44,8 @@ const commerce = [
       { value: "grey", availability: false },
     ],
     imgs: [id105, id106, id107],
-    description: `
-      Display da 15.6” N4020 Fino A 2.80GHz,Ram 8Gb Ddr4 SSd NVMe 256 Gb,Pc portatile,Hdmi,Wi fi,Bluetooth,Windows 11 professional`,
+    description:
+      "Display da 15.6” N4020 Fino A 2.80GHz,Ram 8Gb Ddr4 SSd NVMe 256 Gb,Pc portatile,Hdmi,Wi fi,Bluetooth,Windows 11 professional",
   },
   {
     id: 2,

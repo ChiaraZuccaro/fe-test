@@ -1,10 +1,15 @@
 .choiceWrap {
   margin: 20px 0 28px 0;
+  p {
+    text-align: center;
+  }
 
   .example {
     display: block;
     margin: 20px auto;
+    border: 1px black solid;
     border-radius: 50px;
+    background-color: black;
     width: 40px;
     height: 40px;
     &.red {

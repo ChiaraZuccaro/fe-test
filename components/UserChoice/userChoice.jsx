@@ -22,6 +22,8 @@ export const UserChoice = ({ option }) => {
             : styles.notAvailable
         }`}
       ></div>
+
+      <p>Scegli un colore:</p>
       <div className={styles.choices}>
         {option.map((el, i) => (
           <button

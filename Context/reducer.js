@@ -1,7 +1,26 @@
-import { ADD_TO_CART, DELETE_FROM_CART } from "./constant";
+import {
+  ADD_TO_CART,
+  ADD_TO_WISH,
+  DELETE_FROM_CART,
+  DELETE_FROM_WISH,
+} from "./constant";
 
 export default (state = {}, action) => {
   switch (action.type) {
+    case ADD_TO_WISH:
+      return {
+        ...state,
+        wishlist: [...state.wishlist, action.payload],
+      };
+    case DELETE_FROM_WISH:
+      return {
+        ...state,
+        wishlist: [
+          ...state.wishlist.filter(
+            (el, i) => i != action.payload.i || el.id != action.payload.id
+          ),
+        ],
+      };
     case ADD_TO_CART:
       return {
         ...state,

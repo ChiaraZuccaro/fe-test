@@ -1,13 +1,20 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./styles.module.scss";
 import { IoMdArrowDropup, IoMdArrowDropdown } from "react-icons/io";
 import { ProdImg } from "../ProdImg/prodimg";
 import { UserChoice } from "../UserChoice/userChoice";
+import { useCommerceContext } from "../../Context/Provider";
 import { Button } from "./button/button";
 
 export const Product = ({ prod }) => {
   const [clickShip, setClickship] = useState(false);
   const [clickRate, setClickrate] = useState(false);
+
+  const {
+    addCart,
+    addWish,
+    state: { cart, wishlist },
+  } = useCommerceContext();
 
   return (
     <div className={styles.Prod}>
@@ -20,8 +27,21 @@ export const Product = ({ prod }) => {
 
       <UserChoice option={prod.option} />
       <div className={styles.buttonWrap}>
-        <Button text={"Aggiungi al carrello"} />
-        <Button text={"Metti nei preferiti"} />
+        <div
+          className={styles.cart}
+          onClick={() =>
+            addCart({
+              prod: prod.title,
+              price: prod.price,
+              id: prod.id,
+            })
+          }
+        >
+          <Button text={"Aggiungi al carrello"} />
+        </div>
+        <div className={styles.wish} onClick={() => addWish(prod)}>
+          <Button text={"Metti nei preferiti"} />
+        </div>
       </div>
 
       <div className={styles.details}>
