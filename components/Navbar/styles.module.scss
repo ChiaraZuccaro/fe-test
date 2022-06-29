@@ -1,10 +1,11 @@
 .navbar {
-  padding: 0 15px;
   .navWrap {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
+    width: 93%;
+    margin: 0 auto;
     height: 70px;
     .logo {
       width: 60px;
@@ -42,6 +43,96 @@
         p {
           top: 3px;
           left: 8.5px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 550px) {
+  .navbar {
+    .navWrap {
+      height: 80px;
+      .logo {
+        width: 80px;
+      }
+
+      .hamburger {
+        gap: 30px;
+        svg {
+          width: 26px;
+        }
+
+        .wishNav {
+          p {
+            top: 4px;
+            left: 9.5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .navbar {
+    .navWrap {
+      height: 90px;
+      width: 70%;
+      .logo {
+        width: 90px;
+      }
+
+      .hamburger {
+        svg {
+          width: 30px;
+        }
+        p {
+          font-size: 15px;
+        }
+        .cartNav {
+          p {
+            left: 13px;
+            top: -14px;
+          }
+        }
+        .wishNav {
+          p {
+            left: 10.5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1500px) {
+  .navbar {
+    .navWrap {
+      height: 100px;
+      width: 70%;
+      .logo {
+        width: 100px;
+      }
+
+      .hamburger {
+        svg {
+          width: 35px;
+        }
+        p {
+          font-size: 17px;
+        }
+        .cartNav {
+          p {
+            left: 16px;
+            top: -15px;
+          }
+        }
+        .wishNav {
+          p {
+            top: 6px;
+            left: 12.5px;
+          }
         }
       }
     }
