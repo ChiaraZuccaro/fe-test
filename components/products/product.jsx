@@ -9,6 +9,7 @@ import { Button } from "./button/button";
 export const Product = ({ prod }) => {
   const [clickShip, setClickship] = useState(false);
   const [clickRate, setClickrate] = useState(false);
+  const [choice, setChoice] = useState("");
 
   const { addCart, addWish } = useCommerceContext();
 
@@ -21,7 +22,7 @@ export const Product = ({ prod }) => {
 
       <ProdImg arrayImgs={prod.imgs} />
 
-      <UserChoice option={prod.option} />
+      <UserChoice option={prod.option} setChoice={setChoice} choice={choice} />
       <div className={styles.buttonWrap}>
         <div
           className={styles.cart}
@@ -29,6 +30,7 @@ export const Product = ({ prod }) => {
             addCart({
               prod: prod.title,
               price: prod.price,
+              color: choice,
               id: prod.id,
             })
           }
@@ -66,7 +68,7 @@ export const Product = ({ prod }) => {
             onClick={() => setClickrate(!clickRate)}
             className={styles.expand}
           >
-            <h3>Recensione</h3>
+            <h3>Valutazione</h3>
             {clickRate ? <IoMdArrowDropup /> : <IoMdArrowDropdown />}
           </div>
           <div

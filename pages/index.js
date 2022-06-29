@@ -3,9 +3,13 @@ import commerce from "../utils/data";
 import { Product } from "../components/products/product";
 import { Slider } from "../components/Slider/slider";
 import styles from "../styles/Home.module.css";
+import { useState } from "react";
 
 export default function Home() {
-  const randomProd = commerce[Math.floor(Math.random() * commerce.length)];
+  const [prodClick, setProdClick] = useState();
+  const randomProd =
+    prodClick || commerce[Math.floor(Math.random() * commerce.length)];
+
   return (
     <div className={styles.container}>
       <Head>
@@ -14,7 +18,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Product prod={randomProd} />
-      {/* <Slider /> */}
+      <Slider
+        all={commerce.filter((el) => el != randomProd)}
+        setProdClick={setProdClick}
+      />
     </div>
   );
 }

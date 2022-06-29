@@ -1,11 +1,45 @@
 .sliderCard {
-  border: 1px red solid;
-  height: 150px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 180px;
+  min-width: 180px;
+  height: 180px;
+  width: 180px;
+  padding: 10px;
+  border: 1px rgb(63, 57, 57) solid;
+  border-radius: 10px;
   .image {
-    width: 148px;
+    width: 130px;
     span {
       display: block;
       margin: auto 0;
     }
+  }
+
+  .infoCard {
+    height: 30%;
+    font-size: smaller;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h4 {
+      margin: 0;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: 850px) {
+  .sliderCard {
+    height: 250px;
+    width: 210px;
+    padding: 20px 15px;
   }
 }

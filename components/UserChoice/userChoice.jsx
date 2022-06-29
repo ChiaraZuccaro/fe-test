@@ -1,8 +1,8 @@
 import { useState } from "react";
 import styles from "./user.module.scss";
 
-export const UserChoice = ({ option }) => {
-  const [choice, setChoice] = useState("");
+export const UserChoice = ({ option, setChoice, choice }) => {
+  // const [choice, setChoice] = useState("");
   return (
     <div className={styles.choiceWrap}>
       <div

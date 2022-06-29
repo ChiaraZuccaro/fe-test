@@ -1,6 +1,7 @@
 .sliderWrap {
-  border: 1px black solid;
-  overflow: hidden;
+  margin: 0 auto 15px auto;
+  width: 90%;
+  grid-area: slider;
 
   .top {
     display: flex;
@@ -8,7 +9,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    h3 {
+    h2 {
       margin: 0;
       font-size: 15px;
     }
@@ -28,5 +29,31 @@
     flex-flow: row nowrap;
     align-items: center;
     gap: 20px;
+    overflow: auto;
+  }
+}
+
+@media (min-width: 500px) {
+  .sliderWrap {
+    .top {
+      h2 {
+        font-size: 18px;
+      }
+    }
+  }
+}
+@media (min-width: 850px) {
+  .sliderWrap {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .sliderWrap {
+    .top {
+      h2 {
+        font-size: 22px;
+      }
+    }
   }
 }
