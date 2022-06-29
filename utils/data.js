@@ -9,6 +9,10 @@ import id208 from "./productImg/08.jpg";
 import id209 from "./productImg/09.jpg";
 import id210 from "./productImg/10.jpg";
 import id211 from "./productImg/11.jpg";
+import id312 from "./productImg/12.jpg";
+import id313 from "./productImg/13.jpg";
+import id314 from "./productImg/14.jpg";
+import id315 from "./productImg/15.jpg";
 
 const commerce = [
   {
@@ -65,6 +69,24 @@ const commerce = [
     ],
     description:
       'Sistema operativo: Windows 11 Home, Processore: Intel Core i7-11390H, Memoria: RAM 16 GB - SSD 1 TB, Display: Diagonale da 40,6 cm (16"), 3K+ (3072 x 1920), predisposizione per multitouch, IPS, micro-edge, vetro Corning Gorilla NBT antiriflesso, riduzione della luce blu, 400 nit, 100% sRGB, Tastiera: Tastiera Nightfall Black di dimensioni standard, con retroilluminazione e supporto gesti multi-touch',
+  },
+  ,
+  {
+    id: 3,
+    title: "LG Gram 17Z90P",
+    price: 1499.99,
+    rating: {
+      rate: 4.5,
+      count: 119,
+    },
+    imgs: [id312, id313, id314, id315],
+    option: [
+      { value: "green", availability: true },
+      { value: "pink", availability: true },
+      { value: "purple", availability: true },
+      { value: "grey", availability: true },
+    ],
+    description: `Processore Intel Core i7-1165G7 QuadCore di 11a Generazione (2.80GHz, Turbo fino a 4.70GHz, L3 cache 12MB, TDP 28W), Display 17" IPS Quad HD 16:10 (2560x1600) DCI-P3 99%, RAM 16GB DDR4 (4266 MHz), SSD 512GB M.2 NVMe PCIe, Grafica Intel Iris Xe, Chassis in lega di magnesio e Nano Carbon per una struttura solida e leggera,Batteria litio a lunga durata 80Wh, fino a 15 ore di autonomia (MobileMark 2018), Tastiera retroilluminata, layout italiano, accesso rapido con impronta digitale, TPM, HDD Security, HD Webcam, Dual Mic, Audio DTS:X Ultra che offre un'immersione coinvolgente con o senza cuffie, Intel WiFi 6 AX201, Bluetooth 5.0,Durabilità certificata: standard militare MIL-STD 810 G `,
   },
 ];
 

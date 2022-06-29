@@ -49,6 +49,7 @@
       font-size: 12px;
       width: 100%;
       .expand {
+        margin: 0 auto;
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
@@ -111,7 +112,29 @@
     }
   }
 }
-
+@media (min-width: 600px) {
+  .Prod {
+    .details {
+      .expandWrap {
+        svg {
+          width: 30px;
+          height: auto;
+        }
+        .expand {
+          width: 90%;
+        }
+        .expandInfo {
+          width: 90%;
+          margin: 0 auto;
+          &.on {
+            margin: 0 auto;
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+}
 @media (min-width: 850px) {
   .Prod {
     display: grid;
@@ -128,14 +151,13 @@
 }
 @media (min-width: 1100px) {
   .Prod {
-    width: 85%;
-    margin: 60px auto;
+    width: 90%;
+    margin: 10px auto;
   }
 }
 @media (min-width: 1600px) {
   .Prod {
-    width: 60%;
-    margin: 40px auto;
+    width: 75%;
     h2 {
       font-size: 25px;
     }

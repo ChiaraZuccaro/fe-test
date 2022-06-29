@@ -1,8 +1,6 @@
 import { SliCard } from "./SliCard/sliCard";
-import "react-alice-carousel/lib/alice-carousel.css";
 import styles from "./styles.module.scss";
 import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
-import { useState } from "react";
 
 export const Slider = ({ all, setProdClick }) => {
   return (

@@ -16,8 +16,8 @@ export const Product = ({ prod }) => {
   return (
     <div className={styles.Prod}>
       <div className={styles.TopProd}>
-        <h2>{prod.title}</h2>
-        <p>{prod.price} €</p>
+        <h2>{prod?.title}</h2>
+        <p>{prod?.price} €</p>
       </div>
 
       <ProdImg arrayImgs={prod.imgs} />

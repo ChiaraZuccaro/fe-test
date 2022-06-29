@@ -54,8 +54,15 @@
     }
   }
 }
+@media (min-width: 580px) {
+  .prods {
+    height: 350px;
+  }
+}
 @media (min-width: 600px) {
   .prods {
+    height: 400px;
+
     .arrows {
       width: 80%;
       button {
@@ -66,7 +73,11 @@
     }
   }
 }
-
+@media (min-width: 750px) {
+  .prods {
+    height: 450px;
+  }
+}
 @media (min-width: 850px) {
   .prods {
     height: auto;
