@@ -5,6 +5,7 @@ import { ProdImg } from "../ProdImg/prodimg";
 import { UserChoice } from "../UserChoice/userChoice";
 import { useCommerceContext } from "../../Context/Provider";
 import { Button } from "./button/button";
+import { Rating } from "./rating/rating";
 
 export const Product = ({ prod }) => {
   const [clickShip, setClickship] = useState(false);
@@ -68,12 +69,12 @@ export const Product = ({ prod }) => {
             onClick={() => setClickrate(!clickRate)}
             className={styles.expand}
           >
-            <h3>Valutazione</h3>
+            <h3>Valutazioni ({prod.rating.count})</h3>
             {clickRate ? <IoMdArrowDropup /> : <IoMdArrowDropdown />}
           </div>
-          <div
-            className={`${styles.expandInfo} ${clickRate ? styles.on : ""}`}
-          ></div>
+          <div className={`${styles.expandInfo} ${clickRate ? styles.on : ""}`}>
+            <Rating rate={prod.rating} />
+          </div>
         </div>
       </div>
     </div>

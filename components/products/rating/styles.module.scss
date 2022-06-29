@@ -1,0 +1,9 @@
+.rateWrap {
+  display: flex;
+  flex-flow: row nowrap;
+  .star {
+    svg {
+      fill: rgb(28, 142, 241);
+    }
+  }
+}

@@ -26,7 +26,7 @@ const commerce = [
     title: "HP 255 G8 Computer portatile",
     price: 274.8,
     rating: {
-      rate: 4.5,
+      rate: 4,
       count: 128,
     },
     option: [
@@ -44,7 +44,7 @@ const commerce = [
     title: "Acer Notebook pc portatile",
     price: 319.99,
     rating: {
-      rate: 3.5,
+      rate: 3,
       count: 15,
     },
     option: [
@@ -81,7 +81,7 @@ const commerce = [
     title: "LG Gram 17Z90P",
     price: 1499.99,
     rating: {
-      rate: 4.5,
+      rate: 4,
       count: 119,
     },
     imgs: [id312, id313, id314, id315],
@@ -98,7 +98,7 @@ const commerce = [
     title: "Acer Predator Helios 300 PH317-56-71RM PC Gaming",
     price: 2799.0,
     rating: {
-      rate: 4.5,
+      rate: 1,
       count: 5,
     },
     imgs: [id416, id417, id418],
