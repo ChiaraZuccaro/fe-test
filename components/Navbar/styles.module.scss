@@ -19,9 +19,30 @@
       gap: 20px;
 
       svg {
-        width: 22px;
+        width: 24px;
         cursor: pointer;
         height: auto;
+      }
+      p {
+        margin: 0;
+        position: absolute;
+        font-size: 12px;
+        font-weight: 600;
+      }
+
+      .cartNav {
+        position: relative;
+        p {
+          left: 9px;
+          top: -12px;
+        }
+      }
+      .wishNav {
+        position: relative;
+        p {
+          top: 3px;
+          left: 8.5px;
+        }
       }
     }
   }

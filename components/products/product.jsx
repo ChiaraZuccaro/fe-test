@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import styles from "./styles.module.scss";
 import { IoMdArrowDropup, IoMdArrowDropdown } from "react-icons/io";
 import { ProdImg } from "../ProdImg/prodimg";
@@ -10,11 +10,7 @@ export const Product = ({ prod }) => {
   const [clickShip, setClickship] = useState(false);
   const [clickRate, setClickrate] = useState(false);
 
-  const {
-    addCart,
-    addWish,
-    state: { cart, wishlist },
-  } = useCommerceContext();
+  const { addCart, addWish } = useCommerceContext();
 
   return (
     <div className={styles.Prod}>
