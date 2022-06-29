@@ -8,7 +8,7 @@ export const SliCard = ({ product }) => {
         <Image src={product.imgs[0]} layout="responsive" />
       </div>
       <div className={styles.infoCard}>
-        <h4>{product.title.split(" ").splice(0, 5).join(" ")}</h4>
+        <h4>{product.title.split(" ").splice(0, 3).join(" ")}</h4>
         <p>{product.price} €</p>
       </div>
     </div>

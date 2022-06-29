@@ -41,9 +41,11 @@
     justify-content: center;
     gap: 5px;
     button {
-      border: 1px rgb(194, 194, 194) solid;
+      border: 1px rgb(63, 57, 57) solid;
+      background-color: white;
       border-radius: 5px;
       padding: 5px 20px;
+      cursor: pointer;
     }
   }
 }

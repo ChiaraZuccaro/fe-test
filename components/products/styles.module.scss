@@ -29,9 +29,11 @@
 
     .cart {
       width: 70%;
+      cursor: pointer;
     }
     .wish {
       width: 70%;
+      cursor: pointer;
     }
   }
 
@@ -55,6 +57,7 @@
         align-items: center;
         justify-content: space-between;
         padding: 10px;
+        cursor: pointer;
       }
 
       .expandInfo {

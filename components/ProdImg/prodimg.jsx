@@ -5,7 +5,7 @@ import styles from "./styles.module.scss";
 
 export const ProdImg = ({ arrayImgs }) => {
   const [next, setNext] = useState(0);
-  const imgSrc = "" || arrayImgs[next].src;
+  const imgSrc = "" || arrayImgs[next]?.src;
 
   return (
     <div className={styles.prods}>
