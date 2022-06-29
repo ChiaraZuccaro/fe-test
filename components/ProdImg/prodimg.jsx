@@ -5,11 +5,6 @@ import styles from "./styles.module.scss";
 export const ProdImg = ({ arrayImgs }) => {
   const [next, setNext] = useState(0);
 
-  const indexCheck = () => {
-    setNext(0);
-    return next;
-  };
-
   return (
     <div className={styles.prods}>
       {/* MOBILE */}

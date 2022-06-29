@@ -15,13 +15,15 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0 15px;
+    width: 90%;
+    margin: 0 auto;
+    grid-area: title;
   }
-
   .buttonWrap {
     display: flex;
     flex-direction: column;
     align-items: center;
+    grid-area: buttons;
     gap: 10px;
     margin: 20px 0;
 
@@ -38,11 +40,13 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 0 15px;
+    width: 90%;
+    margin: 0 auto;
+    grid-area: details;
 
     .expandWrap {
       position: relative;
-      font-size: 14px;
+      font-size: 12px;
       width: 100%;
       .expand {
         display: flex;
@@ -77,6 +81,73 @@
             margin: 10px 0;
           }
         }
+      }
+    }
+  }
+}
+
+@media (min-width: 500px) {
+  .Prod {
+    h2 {
+      font-size: 20px;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 5px 0;
+    }
+    p {
+      font-size: 15px;
+    }
+    .TopProd {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 80%;
+    }
+    .details {
+      .expandWrap {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media (min-width: 850px) {
+  .Prod {
+    display: grid;
+
+    grid-template-areas:
+      "title imgsProd"
+      "choice imgsProd"
+      "buttons imgsProd"
+      "details imgsProd";
+
+    margin: 10px 0;
+  }
+}
+@media (min-width: 1100px) {
+  .Prod {
+    width: 85%;
+    margin: 60px auto;
+  }
+}
+@media (min-width: 1600px) {
+  .Prod {
+    width: 60%;
+    margin: 40px auto;
+    h2 {
+      font-size: 25px;
+    }
+    h3 {
+      font-size: 22px;
+      margin: 5px 0;
+    }
+    p {
+      font-size: 19px;
+    }
+    .details {
+      .expandWrap {
+        font-size: 19px;
       }
     }
   }
