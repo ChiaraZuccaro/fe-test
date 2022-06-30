@@ -1,7 +1,10 @@
+import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import styles from "./user.module.scss";
 
 export const UserChoice = ({ option, setChoice, choice }) => {
+  // const [select, setSelect] = useState(false);
+
   return (
     <div className={styles.choiceWrap}>
       <div
@@ -30,6 +33,7 @@ export const UserChoice = ({ option, setChoice, choice }) => {
           <button
             key={i}
             onClick={() => setChoice(el.value.toLowerCase())}
+            className={el.value === choice ? styles.select : ""}
             disabled={!el.availability}
           >
             {el.value}
