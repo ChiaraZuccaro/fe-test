@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./styles.module.scss";
 import { IoMdArrowDropup, IoMdArrowDropdown } from "react-icons/io";
 import { ProdImg } from "../ProdImg/prodimg";
@@ -11,15 +11,49 @@ import { Modal } from "./modal/modal";
 export const Product = ({ prod }) => {
   const [clickShip, setClickship] = useState(false);
   const [clickRate, setClickrate] = useState(false);
+  const [checkCart, setCheckCart] = useState(false);
+  const [checkWish, setCheckWish] = useState(false);
   const [choice, setChoice] = useState("");
   const [cartclick, setCartClick] = useState(false);
   const [wishClick, setWishClick] = useState(false);
   const [modal, setModal] = useState(false);
 
-  const { addCart, addWish } = useCommerceContext();
+  const {
+    addCart,
+    addWish,
+    state: { cart, wishlist },
+  } = useCommerceContext();
+
+  console.log("wishlist", wishlist);
+
+  // CART
+  useEffect(() => {
+    setCheckCart(false);
+    const searchProd = cart.filter((el) => el.prod === prod.title);
+    if (
+      searchProd !== undefined &&
+      searchProd.length != 0 &&
+      searchProd[0].prod === prod.title
+    ) {
+      setCheckCart(true);
+    }
+  }, [cart, prod]);
+
+  //  WISHLIST
+  useEffect(() => {
+    setCheckWish(false);
+    const searchProd = wishlist.filter((el) => el.title === prod.title);
+    if (
+      searchProd !== undefined &&
+      searchProd.length != 0 &&
+      searchProd[0].title === prod.title
+    ) {
+      setCheckWish(true);
+    }
+  }, [wishlist, prod]);
 
   const AddToCart = () => {
-    if (choice !== "") {
+    if (choice !== "" && checkCart === false) {
       addCart({
         prod: prod.title,
         price: prod.price,
@@ -34,20 +68,26 @@ export const Product = ({ prod }) => {
         setModal(false);
         setCartClick(false);
       }, 3000);
+    } else if (checkCart) {
+      alert("Prodotto già inserito nel carrello!");
     } else {
       alert("Devi scegliere un colore");
     }
   };
 
   const AddToWish = () => {
-    addWish(prod);
-    setModal(true);
-    setWishClick(true);
+    if (checkWish === false) {
+      addWish(prod);
+      setModal(true);
+      setWishClick(true);
 
-    setTimeout(() => {
-      setModal(false);
-      setWishClick(false);
-    }, 3000);
+      setTimeout(() => {
+        setModal(false);
+        setWishClick(false);
+      }, 3000);
+    } else {
+      alert("Questo prodotto è già inserito nei preferiti!");
+    }
   };
 
   return (
@@ -77,10 +117,10 @@ export const Product = ({ prod }) => {
       <UserChoice option={prod.option} setChoice={setChoice} choice={choice} />
       <div className={styles.buttonWrap}>
         <div className={styles.cart} onClick={AddToCart}>
-          <Button text={"Aggiungi al carrello"} />
+          <Button text={"Aggiungi al carrello"} check={checkCart} />
         </div>
         <div className={styles.wish} onClick={AddToWish}>
-          <Button text={"Metti nei preferiti"} />
+          <Button text={"Metti nei preferiti"} check={checkCart} />
         </div>
       </div>
 

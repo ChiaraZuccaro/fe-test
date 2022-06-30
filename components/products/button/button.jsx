@@ -4,7 +4,7 @@ import styles from "./button.module.scss";
 
 export const Button = ({ text }) => {
   return (
-    <div
+    <button
       className={`${styles.button} ${
         text.toLowerCase().includes("preferiti") ? styles.wish : ""
       }`}
@@ -15,6 +15,6 @@ export const Button = ({ text }) => {
       ) : (
         <FiHeart />
       )}
-    </div>
+    </button>
   );
 };
