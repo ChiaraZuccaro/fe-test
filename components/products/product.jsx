@@ -6,16 +6,63 @@ import { UserChoice } from "../UserChoice/userChoice";
 import { useCommerceContext } from "../../Context/Provider";
 import { Button } from "./button/button";
 import { Rating } from "./rating/rating";
+import { Modal } from "./modal/modal";
 
 export const Product = ({ prod }) => {
   const [clickShip, setClickship] = useState(false);
   const [clickRate, setClickrate] = useState(false);
   const [choice, setChoice] = useState("");
+  const [cartclick, setCartClick] = useState(false);
+  const [wishClick, setWishClick] = useState(false);
+  const [modal, setModal] = useState(false);
 
   const { addCart, addWish } = useCommerceContext();
 
+  const AddToCart = () => {
+    addCart({
+      prod: prod.title,
+      price: prod.price,
+      img: prod.imgs[0],
+      color: choice,
+      id: prod.id,
+    });
+    setModal(true);
+    setCartClick(true);
+
+    setTimeout(() => {
+      setModal(false);
+      setCartClick(false);
+    }, 2000);
+  };
+
+  const AddToWish = () => {
+    addWish(prod);
+    setModal(true);
+    setWishClick(true);
+
+    setTimeout(() => {
+      setModal(false);
+      setWishClick(false);
+    }, 2000);
+  };
+
   return (
     <div className={styles.Prod}>
+      {modal ? (
+        <Modal
+          message={
+            cartclick
+              ? "Aggiunto correttamente al carrello!"
+              : wishClick
+              ? "Questo prodotto è stato aggiunto alla tua lista preferiti"
+              : ""
+          }
+        />
+      ) : (
+        ""
+      )}
+      {modal ? <div className={styles.overlay}></div> : ""}
+
       <div className={styles.TopProd}>
         <h2>{prod?.title}</h2>
         <p>{prod?.price} €</p>
@@ -25,20 +72,10 @@ export const Product = ({ prod }) => {
 
       <UserChoice option={prod.option} setChoice={setChoice} choice={choice} />
       <div className={styles.buttonWrap}>
-        <div
-          className={styles.cart}
-          onClick={() =>
-            addCart({
-              prod: prod.title,
-              price: prod.price,
-              color: choice,
-              id: prod.id,
-            })
-          }
-        >
+        <div className={styles.cart} onClick={AddToCart}>
           <Button text={"Aggiungi al carrello"} />
         </div>
-        <div className={styles.wish} onClick={() => addWish(prod)}>
+        <div className={styles.wish} onClick={AddToWish}>
           <Button text={"Metti nei preferiti"} />
         </div>
       </div>
