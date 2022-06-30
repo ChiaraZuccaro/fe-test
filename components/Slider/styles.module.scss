@@ -1,73 +1,29 @@
-.sliderWrap {
-  margin: 0 auto 15px auto;
+@import "react-alice-carousel/lib/scss/alice-carousel.scss";
+
+.slideWrap {
   width: 90%;
-  grid-area: slider;
-
-  .top {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    h2 {
-      margin: 0;
-      font-size: 15px;
-    }
-    .arrows {
-      display: flex;
-      flex-flow: row nowrap;
-      gap: 5px;
-      svg {
-        width: 25px;
-        height: auto;
-        cursor: pointer;
-      }
-    }
+  margin: 0 auto;
+  h3 {
+    font-size: 15px;
+    text-align: center;
   }
-
-  .slider {
+  .cardContain {
     display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    gap: 20px;
-    overflow: auto;
+    justify-content: center;
   }
 }
 
 @media (min-width: 500px) {
-  .sliderWrap {
-    .top {
-      h2 {
-        font-size: 18px;
-      }
+  .slideWrap {
+    h3 {
+      font-size: 18px;
     }
   }
 }
-@media (min-width: 600px) {
-  .sliderWrap {
-    .top {
-      .arrows {
-        svg {
-          width: 30px;
-          height: auto;
-        }
-      }
-    }
-  }
-}
-@media (min-width: 850px) {
-  .sliderWrap {
-    width: 80%;
-  }
-}
-
 @media (min-width: 1600px) {
-  .sliderWrap {
-    width: 60%;
-    .top {
-      h2 {
-        font-size: 22px;
-      }
+  .slideWrap {
+    h3 {
+      font-size: 22px;
     }
   }
 }

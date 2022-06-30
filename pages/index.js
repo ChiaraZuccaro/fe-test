@@ -1,12 +1,13 @@
 import Head from "next/head";
 import commerce from "../utils/data";
 import { Product } from "../components/products/product";
-import { Slider } from "../components/Slider/slider";
 import styles from "../styles/Home.module.css";
 import { useState } from "react";
+import { Slider } from "../components/Slider/slider";
 
 export default function Home() {
   const [prodClick, setProdClick] = useState();
+
   const randomProd =
     prodClick || commerce[Math.floor(Math.random() * commerce.length)];
 
@@ -19,7 +20,8 @@ export default function Home() {
       </Head>
       <Product prod={randomProd} />
       <Slider
-        all={commerce.filter((el) => el != randomProd)}
+        commerce={commerce}
+        randomProd={randomProd}
         setProdClick={setProdClick}
       />
     </div>
