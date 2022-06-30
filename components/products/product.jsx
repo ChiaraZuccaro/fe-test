@@ -24,8 +24,6 @@ export const Product = ({ prod }) => {
     state: { cart, wishlist },
   } = useCommerceContext();
 
-  console.log("wishlist", wishlist);
-
   // CART
   useEffect(() => {
     setCheckCart(false);

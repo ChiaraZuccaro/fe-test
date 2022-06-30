@@ -22,6 +22,7 @@ export const Slider = ({ commerce, randomProd, setProdClick }) => {
           .filter((el) => el != randomProd)
           .map((elm) => (
             <div
+              key={elm.id}
               onClick={() => setProdClick(elm)}
               className={styles.cardContain}
             >
