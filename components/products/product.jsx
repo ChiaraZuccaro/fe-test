@@ -50,6 +50,8 @@ export const Product = ({ prod }) => {
     }
   }, [wishlist, prod]);
 
+  useEffect(() => setChoice(""), [prod]);
+
   const AddToCart = () => {
     if (choice !== "" && checkCart === false) {
       addCart({

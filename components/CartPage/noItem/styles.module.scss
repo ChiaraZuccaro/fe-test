@@ -1,0 +1,12 @@
+@import "../../../styles/variables.scss";
+
+.noItemWrap {
+  text-align: center;
+  .sadimg {
+    width: 80%;
+    margin: 0 auto;
+    svg {
+      color: $primary_color;
+    }
+  }
+}
