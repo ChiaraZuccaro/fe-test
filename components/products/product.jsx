@@ -32,7 +32,7 @@ export const Product = ({ prod }) => {
     setTimeout(() => {
       setModal(false);
       setCartClick(false);
-    }, 2000);
+    }, 3000);
   };
 
   const AddToWish = () => {
@@ -43,7 +43,7 @@ export const Product = ({ prod }) => {
     setTimeout(() => {
       setModal(false);
       setWishClick(false);
-    }, 2000);
+    }, 3000);
   };
 
   return (
