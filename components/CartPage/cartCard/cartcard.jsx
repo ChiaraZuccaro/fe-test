@@ -1,9 +1,8 @@
 import styles from "./styles.module.scss";
 import Image from "next/image";
 import { GrClose } from "react-icons/gr";
-import { useState } from "react";
 
-export const CartCard = ({ prodCart, delCart, i, multi, setMulti }) => {
+export const CartCard = ({ prodCart, delCart, i }) => {
   return (
     <div className={styles.cardWrap}>
       <div className={styles.cartCard}>

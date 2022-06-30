@@ -8,8 +8,10 @@ export const NoItem = () => {
       <div className={styles.sadimg}>
         <Image src={sad} />
       </div>
-      <h2>Non ci sono elementi nel carrello!</h2>
-      <h3>Torna più tardi quando ne avrai aggiunto qualcuno</h3>
+      <div className={styles.noEl}>
+        <h2>Non ci sono elementi nel carrello!</h2>
+        <h3>Torna più tardi quando ne avrai aggiunto qualcuno</h3>
+      </div>
     </div>
   );
 };

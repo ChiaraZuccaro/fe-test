@@ -2,11 +2,76 @@
 
 .noItemWrap {
   text-align: center;
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
   .sadimg {
     width: 80%;
     margin: 0 auto;
-    svg {
-      color: $primary_color;
+  }
+  .noEl {
+    h2 {
+      font-size: 18px;
+    }
+    h3 {
+      font-size: 15px;
+    }
+  }
+}
+
+@media (min-width: 450px) {
+  .noItemWrap {
+    width: 85%;
+    .noEl {
+      h2 {
+        font-size: 22px;
+      }
+      h3 {
+        font-size: 18px;
+      }
+    }
+  }
+}
+@media (min-width: 600px) {
+  .noItemWrap {
+    margin: 10px auto;
+    .sadimg {
+      width: 70%;
+    }
+    .noEl {
+      h2 {
+        font-size: 26px;
+      }
+      h3 {
+        font-size: 19px;
+      }
+    }
+  }
+}
+@media (min-width: 1000px) {
+  .noItemWrap {
+    flex-direction: row;
+    .sadimg {
+      width: 50%;
+    }
+    .noEl {
+      h2 {
+        font-size: 30px;
+      }
+      h3 {
+        font-size: 25px;
+      }
+    }
+  }
+}
+@media (min-width: 1500px) {
+  .noItemWrap {
+    .sadimg {
+      width: 35%;
     }
   }
 }
