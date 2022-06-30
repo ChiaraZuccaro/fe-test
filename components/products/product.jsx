@@ -19,20 +19,24 @@ export const Product = ({ prod }) => {
   const { addCart, addWish } = useCommerceContext();
 
   const AddToCart = () => {
-    addCart({
-      prod: prod.title,
-      price: prod.price,
-      img: prod.imgs[0],
-      color: choice,
-      id: prod.id,
-    });
-    setModal(true);
-    setCartClick(true);
+    if (choice !== "") {
+      addCart({
+        prod: prod.title,
+        price: prod.price,
+        img: prod.imgs[0],
+        color: choice,
+        id: prod.id,
+      });
+      setModal(true);
+      setCartClick(true);
 
-    setTimeout(() => {
-      setModal(false);
-      setCartClick(false);
-    }, 3000);
+      setTimeout(() => {
+        setModal(false);
+        setCartClick(false);
+      }, 3000);
+    } else {
+      alert("Devi scegliere un colore");
+    }
   };
 
   const AddToWish = () => {
