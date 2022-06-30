@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Image from "next/image";
 import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
 import styles from "./styles.module.scss";
 
