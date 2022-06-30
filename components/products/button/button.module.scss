@@ -1,8 +1,10 @@
+@import "../../../styles/variables.scss";
+
 .button {
   width: 100%;
-  background-color: rgb(63, 57, 57);
+  background-color: $primary_color;
   text-align: center;
-  border: 1px rgb(63, 57, 57) solid;
+  border: 1px $primary_color solid;
   border-radius: 20px;
   padding: 10px 20px;
   color: white;
@@ -13,27 +15,38 @@
   font-size: 15px;
   transition: all 0.3s ease-in-out;
   &.wish {
-    border: 1px solid rgb(63, 57, 57);
+    border: 1px solid $primary_color;
     background-color: white;
-    color: rgb(63, 57, 57);
+    color: $primary_color;
   }
 }
 .button:hover {
   background-color: white;
-  color: rgb(63, 57, 57);
+  color: $primary_color;
   transition: all 0.3s ease-in-out;
   &.wish {
-    background-color: rgb(63, 57, 57);
+    background-color: $primary_color;
     color: white;
   }
 }
 
 .button:active {
   background-color: white;
-  color: rgb(63, 57, 57);
+  color: $primary_color;
   transition: all 0.3s ease-in-out;
   &.wish {
-    background-color: rgb(63, 57, 57);
+    background-color: $primary_color;
     color: white;
+  }
+}
+
+@media (min-width: 1600px) {
+  .button {
+    font-size: 19px;
+    gap: 10px;
+    svg {
+      width: 25px;
+      height: auto;
+    }
   }
 }

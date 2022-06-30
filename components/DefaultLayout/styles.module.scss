@@ -1,7 +1,9 @@
+@import "../../styles/variables.scss";
+
 .Allwrapper {
   footer {
     text-align: center;
-    background-color: rgb(63, 57, 57);
+    background-color: $primary_color;
     color: white;
     padding: 5px 0;
   }

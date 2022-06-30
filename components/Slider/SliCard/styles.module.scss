@@ -1,3 +1,5 @@
+@import "../../../styles/variables.scss";
+
 .sliderCard {
   position: relative;
   display: flex;
@@ -9,7 +11,7 @@
   height: 180px;
   width: 180px;
   padding: 10px;
-  border: 1px rgb(63, 57, 57) solid;
+  border: 1px $primary_color solid;
   border-radius: 10px;
   .image {
     width: 130px;

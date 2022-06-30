@@ -1,8 +1,7 @@
-import { useState } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
 import styles from "./user.module.scss";
 
 export const UserChoice = ({ option, setChoice, choice }) => {
-  // const [choice, setChoice] = useState("");
   return (
     <div className={styles.choiceWrap}>
       <div
@@ -21,7 +20,9 @@ export const UserChoice = ({ option, setChoice, choice }) => {
             ? styles.green
             : styles.notAvailable
         }`}
-      ></div>
+      >
+        {choice === "" ? <GiHamburgerMenu /> : ""}
+      </div>
 
       <p>Scegli un colore:</p>
       <div className={styles.choices}>

@@ -1,3 +1,5 @@
+@import "../../styles/variables.scss";
+
 .choiceWrap {
   margin: 20px 0 28px 0;
 
@@ -8,13 +10,22 @@
   }
 
   .example {
+    position: relative;
     display: block;
     margin: 20px auto;
-    border: 1px black solid;
+    border: 4px $primary_color solid;
     border-radius: 50px;
-    background-color: black;
-    width: 40px;
-    height: 40px;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    svg {
+      position: absolute;
+      top: -6px;
+      left: -6px;
+      width: 60px;
+      height: auto;
+      transform: rotate(45deg);
+    }
     &.red {
       background-color: rgb(187, 0, 0);
     }
@@ -41,7 +52,7 @@
     justify-content: center;
     gap: 5px;
     button {
-      border: 1px rgb(63, 57, 57) solid;
+      border: 1px $primary_color solid;
       background-color: white;
       border-radius: 5px;
       padding: 5px 20px;
@@ -53,5 +64,24 @@
 @media (min-width: 850px) {
   .choiceWrap {
     margin: 10px 0;
+
+    .example {
+      width: 70px;
+      height: 70px;
+
+      svg {
+        width: 80px;
+      }
+    }
+  }
+}
+@media (min-width: 1600px) {
+  .choiceWrap {
+    .choices {
+      button {
+        padding: 8px 30px;
+        font-size: 18px;
+      }
+    }
   }
 }

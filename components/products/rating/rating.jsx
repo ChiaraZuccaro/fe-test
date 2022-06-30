@@ -11,6 +11,12 @@ export const Rating = ({ rate }) => {
   const [star5, setStar5] = useState(false);
 
   useEffect(() => {
+    setStar1(false);
+    setStar2(false);
+    setStar3(false);
+    setStar4(false);
+    setStar5(false);
+
     if (rate.rate === 1) {
       setStar1(true);
     } else if (rate.rate === 2) {

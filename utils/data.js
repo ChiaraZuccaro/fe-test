@@ -44,7 +44,7 @@ const commerce = [
     title: "Acer Notebook pc portatile",
     price: 319.99,
     rating: {
-      rate: 3,
+      rate: 2,
       count: 15,
     },
     option: [
@@ -98,7 +98,7 @@ const commerce = [
     title: "Acer Predator Helios 300 PH317-56-71RM PC Gaming",
     price: 2799.0,
     rating: {
-      rate: 1,
+      rate: 5,
       count: 5,
     },
     imgs: [id416, id417, id418],

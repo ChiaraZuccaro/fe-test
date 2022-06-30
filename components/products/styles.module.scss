@@ -156,6 +156,17 @@
   .Prod {
     width: 90%;
     margin: 10px auto;
+
+    .buttonWrap {
+      margin: 20px auto;
+      width: 80%;
+    }
+
+    .details {
+      .description {
+        width: 70%;
+      }
+    }
   }
 }
 @media (min-width: 1600px) {
