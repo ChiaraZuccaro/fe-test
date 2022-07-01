@@ -13,6 +13,7 @@
   justify-content: center;
   gap: 5px;
   font-size: 15px;
+  font-family: $font;
   transition: all 0.3s ease-in-out;
   &.wish {
     border: 1px solid $primary_color;

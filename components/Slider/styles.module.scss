@@ -1,8 +1,11 @@
 @import "react-alice-carousel/lib/scss/alice-carousel.scss";
+@import "../../styles/variables.scss";
 
 .slideWrap {
   width: 90%;
   margin: 0 auto;
+
+  font-family: $font;
   h3 {
     font-size: 15px;
     text-align: center;
