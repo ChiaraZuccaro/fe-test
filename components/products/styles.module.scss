@@ -204,6 +204,11 @@
     .details {
       .expandWrap {
         font-size: 19px;
+        .expandInfo {
+          &.on {
+            height: 120px;
+          }
+        }
       }
       .description {
         width: 100%;

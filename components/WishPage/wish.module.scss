@@ -1,0 +1,57 @@
+.wishWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 10px auto;
+  h2 {
+    font-size: 17px;
+    margin: 10px auto;
+  }
+  p {
+    font-size: 13px;
+    margin: 5px auto;
+  }
+
+  .wishProd {
+    display: grid;
+    margin: 5px 0;
+    grid-template-columns: repeat(1, 180px);
+    gap: 20px;
+    .wishClick {
+      cursor: pointer;
+    }
+  }
+}
+@media (min-width: 500px) {
+  .wishWrap {
+    gap: 20px;
+    .wishProd {
+      grid-template-columns: repeat(2, 180px);
+      gap: 40px;
+    }
+  }
+}
+@media (min-width: 850px) {
+  .wishWrap {
+    gap: 40px;
+    h2 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 20px;
+    }
+    .wishProd {
+      grid-template-columns: repeat(2, 210px);
+      gap: 100px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .wishWrap {
+    margin: 30px auto;
+    .wishProd {
+      grid-template-columns: repeat(3, 250px);
+    }
+  }
+}

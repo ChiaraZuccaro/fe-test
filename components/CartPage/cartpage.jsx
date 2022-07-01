@@ -49,7 +49,7 @@ export const CartPage = () => {
           </div>
         </div>
       ) : (
-        <NoItem />
+        <NoItem text="nel carrello" />
       )}
     </div>
   );

@@ -50,6 +50,24 @@
   }
 }
 
+@media (min-width: 500px) {
+  .cartWrap {
+    .bottomCart {
+      gap: 10px;
+      h4 {
+        font-size: 20px;
+        margin: 15px auto;
+      }
+      .moltiplication {
+        font-size: larger;
+      }
+      .go {
+        width: 200px;
+        font-size: 20px;
+      }
+    }
+  }
+}
 @media (min-width: 800px) {
   .cartWrap {
     width: 80%;
@@ -58,5 +76,16 @@
 @media (min-width: 1200px) {
   .cartWrap {
     width: 70%;
+    .bottomCart {
+      h4 {
+        font-size: 25px;
+      }
+      .moltiplication {
+        font-size: 25px;
+      }
+      p {
+        font-size: 22px;
+      }
+    }
   }
 }
