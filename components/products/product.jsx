@@ -152,9 +152,10 @@ export const Product = ({ prod }) => {
             className={styles.expand}
           >
             <h3>Valutazioni ({prod.rating.count})</h3>
-
-            <Rating rate={prod.rating} />
-            {clickRate ? <IoMdArrowDropup /> : <IoMdArrowDropdown />}
+            <div className={styles.starsEnd}>
+              <Rating rate={prod.rating} />
+              {clickRate ? <IoMdArrowDropup /> : <IoMdArrowDropdown />}
+            </div>
           </div>
           <div
             className={`${styles.expandInfo} ${clickRate ? styles.on : ""}`}
