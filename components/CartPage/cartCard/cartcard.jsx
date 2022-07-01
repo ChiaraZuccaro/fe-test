@@ -11,6 +11,7 @@ export const CartCard = ({ prodCart, delCart, i }) => {
         </div>
         <div className={styles.infoCart}>
           <h2>{prodCart.prod}</h2>
+          <p>{prodCart.desc}</p>
           <div className={styles.underCart}>
             <h3>{prodCart.price} €</h3>
             <div

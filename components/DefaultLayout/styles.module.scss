@@ -1,6 +1,10 @@
 @import "../../styles/variables.scss";
 
 .Allwrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   footer {
     text-align: center;
     background-color: $primary_color;

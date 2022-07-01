@@ -1,10 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
 import styles from "./styles.module.scss";
 
 export const ProdImg = ({ arrayImgs }) => {
   const [next, setNext] = useState(0);
   const imgSrc = "" || arrayImgs[next]?.src;
+
+  useEffect(() => setNext(0), [arrayImgs]);
 
   return (
     <div className={styles.prods}>

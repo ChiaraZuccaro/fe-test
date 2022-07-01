@@ -89,8 +89,9 @@
     }
     .prodEvidImg {
       display: block;
+      width: 100%;
       .ImgOn {
-        width: 80%;
+        width: 60%;
         margin: 0 auto;
         img {
           width: 100%;
@@ -111,6 +112,8 @@
           img {
             display: block;
             height: 90px;
+            max-width: 150px;
+            object-fit: contain;
           }
         }
       }

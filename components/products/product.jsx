@@ -57,6 +57,7 @@ export const Product = ({ prod }) => {
       addCart({
         prod: prod.title,
         price: prod.price,
+        desc: prod.description,
         img: prod.imgs[0],
         color: choice,
         id: prod.id,

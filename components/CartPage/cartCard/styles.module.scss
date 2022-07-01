@@ -21,6 +21,9 @@
       justify-content: center;
       gap: 5px;
       width: 60%;
+      p {
+        display: none;
+      }
 
       h2 {
         font-size: 15px;
@@ -68,6 +71,170 @@
 
     svg {
       width: 10%;
+      height: auto;
+      padding: 5px;
+    }
+  }
+}
+@media (min-width: 400px) {
+  .cardWrap {
+    .cartCard {
+      svg {
+        padding: 10px;
+      }
+    }
+  }
+}
+@media (min-width: 500px) {
+  .cardWrap {
+    .cartCard {
+      svg {
+        padding: 15px;
+      }
+    }
+  }
+}
+@media (min-width: 600px) {
+  .cardWrap {
+    .cartCard {
+      .infoCart {
+        h2 {
+          font-size: 20px;
+        }
+
+        .underCart {
+          h3 {
+            font-size: 17px;
+          }
+
+          .choice {
+            width: 35px;
+            height: 35px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 700px) {
+  .cardWrap {
+    .cartCard {
+      svg {
+        padding: 20px;
+      }
+    }
+  }
+}
+@media (min-width: 900px) {
+  .cardWrap {
+    .cartCard {
+      svg {
+        padding: 25px;
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .cardWrap {
+    .cartCard {
+      .infoCart {
+        width: 50%;
+        h2 {
+          font-size: 25px;
+        }
+
+        .underCart {
+          h3 {
+            font-size: 22px;
+          }
+
+          .choice {
+            width: 35px;
+            height: 35px;
+          }
+        }
+      }
+      svg {
+        width: 20%;
+        padding: 70px;
+      }
+    }
+  }
+}
+@media (min-width: 1400px) {
+  .cardWrap {
+    .cartCard {
+      .infoCart {
+        gap: 30px;
+        h2 {
+          font-size: 28px;
+        }
+
+        .underCart {
+          h3 {
+            font-size: 25px;
+          }
+
+          .choice {
+            width: 40px;
+            height: 40px;
+          }
+        }
+      }
+      svg {
+        padding: 85px;
+      }
+    }
+  }
+}
+@media (min-width: 1600px) {
+  .cardWrap {
+    .cartCard {
+      .infoCart {
+        p {
+          display: block;
+          width: 80%;
+          text-align: center;
+          margin: 0 auto;
+        }
+      }
+      svg {
+        padding: 95px;
+      }
+    }
+  }
+}
+@media (min-width: 1800px) {
+  .cardWrap {
+    .cartCard {
+      .infoCart {
+        h2 {
+          font-size: 25px;
+        }
+
+        .underCart {
+          h3 {
+            font-size: 22px;
+          }
+
+          .choice {
+            width: 35px;
+            height: 35px;
+          }
+        }
+      }
+      svg {
+        padding: 110px;
+      }
+    }
+  }
+}
+@media (min-width: 1900px) {
+  .cardWrap {
+    .cartCard {
+      svg {
+        padding: 130px;
+      }
     }
   }
 }

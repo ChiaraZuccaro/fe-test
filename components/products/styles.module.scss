@@ -155,11 +155,11 @@
     display: grid;
 
     grid-template-areas:
-      "title imgsProd"
-      "choice imgsProd"
-      "buttons imgsProd"
-      "details imgsProd"
-      "slider slider";
+      "title imgsProd "
+      "choice imgsProd "
+      "buttons imgsProd "
+      "details imgsProd "
+      "slider slider ";
 
     margin: 10px 0;
   }
@@ -184,6 +184,12 @@
 @media (min-width: 1600px) {
   .Prod {
     width: 75%;
+    grid-template-areas:
+      "title imgsProd imgsProd"
+      "choice imgsProd imgsProd"
+      "buttons imgsProd imgsProd"
+      "details imgsProd imgsProd"
+      "slider slider slider";
     h2 {
       font-size: 25px;
     }
@@ -197,6 +203,9 @@
     .details {
       .expandWrap {
         font-size: 19px;
+      }
+      .description {
+        width: 100%;
       }
     }
   }

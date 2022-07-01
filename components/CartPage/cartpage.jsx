@@ -29,7 +29,7 @@ export const CartPage = () => {
           ))}
           <div className={styles.bottomCart}>
             <h4>Il totale viene:</h4>
-            <p>{Math.round(totalPrice * multi)} €</p>
+            <p>{totalPrice * multi} €</p>
 
             <div className={styles.moltiplication}>
               <button
