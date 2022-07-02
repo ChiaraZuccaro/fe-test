@@ -7,7 +7,7 @@ export const CartCard = ({ prodCart, delCart, i }) => {
     <div className={styles.cardWrap}>
       <div className={styles.cartCard}>
         <div className={styles.photoCart}>
-          <Image src={prodCart.img} />
+          <Image src={prodCart.img} alt="item" />
         </div>
         <div className={styles.infoCart}>
           <h2>{prodCart.prod}</h2>

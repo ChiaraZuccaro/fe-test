@@ -6,7 +6,7 @@ export const NoItem = ({ text }) => {
   return (
     <div className={styles.noItemWrap}>
       <div className={styles.sadimg}>
-        <Image src={sad} />
+        <Image src={sad} alt="no element img" />
       </div>
       <div className={styles.noEl}>
         <h2>Non ci sono elementi {text}!</h2>

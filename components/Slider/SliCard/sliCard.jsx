@@ -5,7 +5,7 @@ export const SliCard = ({ product }) => {
   return (
     <div className={styles.sliderCard}>
       <div className={styles.image}>
-        <Image src={product.imgs[0]} layout="responsive" />
+        <Image src={product.imgs[0]} alt="slider image" layout="responsive" />
       </div>
       <div className={styles.infoCard}>
         <h4>{product.title.split(" ").splice(0, 3).join(" ")}</h4>
