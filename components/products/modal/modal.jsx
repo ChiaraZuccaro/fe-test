@@ -12,7 +12,7 @@ export const Modal = ({ message }) => {
           </p>
         ) : (
           <p>
-            Puoi vedere i tuoi prodotti preferiti cliccando nell &apos icona del
+            Puoi vedere i tuoi prodotti preferiti cliccando nell' icona del
             cuore in alto 😉👍
           </p>
         )}
