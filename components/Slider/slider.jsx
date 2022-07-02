@@ -7,6 +7,7 @@ export const Slider = ({ commerce, randomProd, setProdClick }) => {
     0: { items: 1.5 },
     500: { items: 2.5 },
     1000: { items: 4 },
+    1600: { items: 5 },
   };
 
   return (

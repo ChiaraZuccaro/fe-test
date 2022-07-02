@@ -19,6 +19,13 @@ import id418 from "./productImg/18.jpg";
 import id519 from "./productImg/19.jpg";
 import id520 from "./productImg/20.jpg";
 import id521 from "./productImg/21.jpg";
+import id622 from "./productImg/22.jpg";
+import id623 from "./productImg/23.jpg";
+import id624 from "./productImg/24.jpg";
+import id625 from "./productImg/25.jpg";
+import id726 from "./productImg/26.jpg";
+import id727 from "./productImg/27.jpg";
+import id728 from "./productImg/28.jpg";
 
 const commerce = [
   {
@@ -126,6 +133,46 @@ const commerce = [
       { value: "grey", availability: true },
     ],
     description: `Notebook con display WQXGA Adaptive Sync con cornici ultra sottili e un rapporto schermo-corpo del 94%, certificazione Pantone Validated con copertura DCI-P3 al 100% e proporzioni 16:10 che espandono il tuo raggio di visione e di azione, Tastiera ottimizzata per essere più resistente e silenziosa con illuminazione RGB a 1 zona, cerniera Ergolift con alzata ergonomica ruotabile fino a 180° per giocare e lavorare con il ottimo comfort, Performance a una velocità di livello ottimo con la scheda grafica NVIDIA GeForce RTX 3070 e il Processore all’avanguardia Intel Core di Undicesima Generazione i7-11800H con applicazione del composto termico di metallo liquido Liquid Thermal per garantire prestazioni elevate anche sotto sforzo, Esperienza audio grazie alla tecnologia Dolby Atmos composta da sei altoparlanti con doppi woofer, array di microfoni 3D e sistema AI bidirezionale per la cancellazione del rumore, Perfetto per chi cerca un Notebook di design, compatto e leggero, che offre prestazioni massime per il gioco e il lavoro professionali anche sotto sforzo e con uso prolungato`,
+  },
+  {
+    id: 6,
+    title: "Lenovo IdeaPad 1 Notebook",
+    price: 279,
+    rating: {
+      rate: 4,
+      count: 19,
+    },
+    imgs: [id622, id623, id624, id625],
+    option: [
+      { value: "green", availability: true },
+      { value: "pink", availability: true },
+      { value: "purple", availability: true },
+      { value: "grey", availability: true },
+      { value: "blue", availability: true },
+    ],
+    description: `Display 14" HD TN con risoluzione 1366x768, luminosità massima di 220nits, anti-glare, Grazie al processore Intel Celeron N4020 puoi ottenere delle prestazioni ottime su un notebook sottile e leggero, Storage da 128GB SSD M.2 2242 PCIe 2.0x4 NVMe; per avere tutto lo spazio necessario dove archiviare i tuoi documenti di lavoro in velocità e sicurezza, RAM 4GB Soldered DDR4-2400, Scheda grafica integrata Intel UHD Graphics 600, Sistema operativo: Windows 10 Home in modalità S, Leggerissimo e super sottile, con un peso di 1.4 kg e spessore di 17.7 mm; materiale: PC + ABS`,
+  },
+  {
+    id: 7,
+    title: "KUU Laptop ",
+    price: 269,
+    rating: {
+      rate: 1,
+      count: 1,
+    },
+    imgs: [id726, id727, id728],
+    option: [
+      { value: "green", availability: true },
+      { value: "pink", availability: true },
+      { value: "purple", availability: false },
+      { value: "grey", availability: true },
+      { value: "blue", availability: true },
+    ],
+    description: `【Schermo ultraleggero 3k HDR a bordo stretto】 Il notebook è dotato di uno schermo ultraleggero 3k HDR a bordo stretto da 14 pollici con una risoluzione di 3000*2000 e uno schermo di oltre 4 milioni di pixel. Puoi goderti i colori ideali con colori brillanti, saturi e naturali. La scelta migliore per gli anziani per guardare video ad alta definizione online sempre e ovunque. Il corpo è leggero, dotato di 2 batterie da 5000 MAH/38 WH e supporta la ricarica rapida PD.
+    💻【RAM E ROM】 Il laptop è dotato di RAM DDR3 da 8 GB, dotato di SSD M.2, la velocità di lettura è fino a 450 M/S, consentendo di aprire tutte le applicazioni necessarie con spazio per un funzionamento più libero, fluido e stabile Multitasking da essendo equipaggiato The Feel ha 256 GB di spazio di archiviazione SSD, che ti offre spazio sufficiente per archiviare tutti i tuoi file, guardare più film ed eseguire facilmente le attività quotidiane.
+    💻【Super parametri】 Il laptop adotta la CPU Intel N4120, la frequenza più alta può raggiungere 2,6 GHz, grafica Intel integrata quad-core e quattro fili, questo laptop ad alta definizione può avere tempi di avvio estremamente rapidi e un facile controllo di alte prestazioni, multitasking , arrivare. Design grafico soddisfatto, ufficio commerciale, intrattenimento di gioco, ecc., Migliorando così le prestazioni e la stabilità complessive.
+    💻【Tastiera e connettori】 La tastiera di dimensioni standard, con bordo stretto e retroilluminato offre un'esperienza di digitazione eccellente, riconoscimento rapido delle impronte digitali, sblocco e clic per aprire per privacy e maggiore sicurezza Le porte includono 1 slot per schede TF, 2 USB 3.0, 1 jack per cuffie standard da 3,5 mm, 1 x Tipo-C, 1 x PORTA CC, 1 x HDMI. Supporta WiFi dual-band 5G, un passo per l'ufficio e l'intrattenimento.
+    💻【Sistema operativo e garanzia】 Supporto online 7 * 24, il notebook è preinstallato con il sistema operativo Windows 10 Pro, con velocità di avvio elevata e velocità di risposta rapida e il computer supporta l'aggiornamento del sistema operativo Windows 11. Offriamo una garanzia di 1 anno che include supporto tecnico, istruzioni per l'uso e l'installazione.`,
   },
 ];
 
