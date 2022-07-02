@@ -190,10 +190,10 @@
   .Prod {
     width: 75%;
     grid-template-areas:
-      "title imgsProd imgsProd"
-      "choice imgsProd imgsProd"
-      "buttons imgsProd imgsProd"
-      "details imgsProd imgsProd"
+      "imgsProd imgsProd title"
+      "imgsProd imgsProd choice"
+      "imgsProd imgsProd buttons"
+      "imgsProd imgsProd details "
       "slider slider slider";
     h2 {
       font-size: 25px;
